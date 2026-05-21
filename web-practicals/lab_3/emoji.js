@@ -26,8 +26,10 @@ function translate(text) {
   let result = text;
   for (const word in dictionary) {
     result = result.replaceAll(word, dictionary[word]);
+
     let capitalized = word.charAt(0).toUpperCase() + word.slice(1);
     result = result.replaceAll(capitalized, dictionary[word]);
+    
     let uppercase = word.toUpperCase();
     result = result.replaceAll(uppercase, dictionary[word]);
   }
