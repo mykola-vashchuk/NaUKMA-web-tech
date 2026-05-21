@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+}
+:root {
+  --bg: black;  
+  --text: pink;
+}
+
+.custom-border{
+   border: 2px solid pink;
+}
+
+.text.theme-white {
+  max-width: 10rem;
+  max-height: 100rem;
+  display:  block;
+  margin: 1%;
+  padding: 1%;
+  text-align: center;
+  border-radius: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  background: white;
+  color: black;
+}
+
+
+.text.theme-purple {
+  max-width: 10rem;
+  max-height: 100rem;
+  display:  block;
+  margin: 1%;
+  padding: 1%;
+  
+  text-align: center;
+  border-radius: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  background: purple;
+  color: black;
+}
+
+.text.theme-black {
+  max-width: 10rem;
+  max-height: 20%;
+  display:  block;
+  margin: 1%;
+  padding: 1%;
+
+  text-align: center;
+  border-radius: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  background: var(--bg);
+  color: white;
+
+}
+/* 1. Усі <input type="email"> отримують синю рамку */
+input[type="email"] {
+  border: 2px solid blue;
+}
+
+/* 2. :focus стан будь-якого input - потовщена синя рамка з тінню */
+input:focus {
+  outline: none; 
+  border: 3px solid blue;
+  box-shadow: 0 0 8px rgba(0, 0, 255, 0.5); 
+}
+
+/*по хаверу змінювати колір бордеру інпута на рожевий 
+*/
+
+/* 3. Перший <li> у кожному <ul> — жирний текст */
+ul > li:first-child {
+  font-weight: bold;
+}
+
+/* 4. Парні рядки таблиці — світло-сірий фон (#f5f5f5) */
+tr:nth-child(3n) {
+  background-color: pink;
+}
+
+/* 5. Усі параграфи окрім .intro — сірі (#666) */
+p:not(.intro) {
+  color: #666666;
+}
+
+/* 6. До <blockquote> через псевдоелементи додаються великі лапки */
+blockquote::before {
+  content: "« ";
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+blockquote::after {
+  content: " »";
+  font-size: 1.5rem;
+  font-weight: bold;
+}
