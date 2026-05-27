@@ -17,8 +17,8 @@ const dictionary = {
   "телефон":  "📱",
   "комп":     "💻",
 };
-a = [1, 2, 3]
-b = [[4, 5], [6, 7]]
+// a = [1, 2, 3]
+// b = [[4, 5], [6, 7]]
 
 const dictionaryMap = new Map(Object.entries(dictionary))
 
@@ -29,7 +29,7 @@ function translate(text) {
 
     let capitalized = word.charAt(0).toUpperCase() + word.slice(1);
     result = result.replaceAll(capitalized, dictionary[word]);
-    
+
     let uppercase = word.toUpperCase();
     result = result.replaceAll(uppercase, dictionary[word]);
   }
