@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokemon Explorer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Pokemon Explorer</h1>
+    <div class="search-container">
+      <input type="text" id="search-input" placeholder="Пошук покемона за іменем...">
+    </div>
+  </header>
+
+  <main>
+    <div id="loading-indicator" class="status-message hidden">Завантаження покемонів...</div>
+    <div id="error-message" class="status-message hidden">Ой, щось пішло не так. Спробуйте ще раз!</div>
+    <div id="pokemon-grid" class="pokemon-grid"></div>
+  </main>
+
+  <footer class="pagination">
+    <button id="btn-prev" disabled>Назад</button>
+    <span id="page-info">Сторінка 1</span>
+    <button id="btn-next">Вперед</button>
+  </footer>
+
+  <div id="modal-overlay" class="modal-overlay hidden">
+    <div class="modal-content">
+      <button id="modal-close" class="modal-close">&times;</button>
+      <div id="modal-body">
+        </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
